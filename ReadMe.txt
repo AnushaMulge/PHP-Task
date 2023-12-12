@@ -1,14 +1,18 @@
-SQL Queries:
+Project Title: User System
 
-CREATE DATABASE IF NOT EXISTS user_registration;
+Overview:
+The "User System" is a PHP-based web application that facilitates user registration and login. This project is designed to provide a secure and responsive user interface for seamless interaction.
 
-USE user_registration;
+Features:
 
-CREATE TABLE IF NOT EXISTS users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
-    address VARCHAR(255) NOT NULL,
-    phone_number VARCHAR(15) NOT NULL
-);
+1.User Registration:
+- Collects user details including name, email, password, address, and phone number.
+- Passwords are securely stored using industry-standard encoding.
+
+2.User Login:
+- Validates user credentials during login.
+- Displays user-friendly messages for successful logins or invalid credentials.
+
+MySQL Database Backend:
+- Utilizes MySQL as the database server to persist user data.
+
